@@ -21,6 +21,7 @@ function ContadorPessoas() {
 
   return (
     <div>
+      <h3> Exercicio - Contador Pessoas </h3>
       <h4>Total de pessoas: {totalPessoas}</h4>
       <div>
         <h4>Homens</h4>
