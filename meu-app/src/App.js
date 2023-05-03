@@ -1,6 +1,8 @@
 import Relogio from "./Components/Relogio";
 import Letreiro from "./Components/Letreiro";
 import ContadorPessoas from "./Components/ContadorPessoas";
+import Profile from "./Components/Profile";
+import Gallery from "./Components/Gallery";
 
 function App() {
   return (
