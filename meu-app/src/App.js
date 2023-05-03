@@ -12,6 +12,8 @@ function App() {
         </div>
       <h2> Aula 02</h2>
         <ContadorPessoas />
+      <Profile />
+      <Gallery />
     </div>
   );
 }
