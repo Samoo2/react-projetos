@@ -15,7 +15,7 @@ let initialArtists = [
   },
 ];
 
-export default function List2Aula5() {
+export default function List2() {
   const [artists, setArtists] = useState(initialArtists);
   console.log(artists);
   return (
