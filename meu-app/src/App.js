@@ -5,6 +5,8 @@ import Profile from "./Components/Profile";
 import Gallery from "./Components/Gallery";
 import Avatar from "./Components/Avatar";
 import TodoList from "./Components/TodoList";
+import Toolbar from "./Components/Toolbar";
+import Gallerys from "./Components/Gallerys";
 
 function App() {
   return (
@@ -21,6 +23,9 @@ function App() {
       <Gallery />
       <Avatar />
       <TodoList />
+       <h2> Aula 04</h2>
+        <Toolbar />
+        <Gallerys />
     </div>
   );
 }
