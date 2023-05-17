@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-export default function FormAula5() {
+export default function Form() {
     const [to, setTo] = useState("Alice");
     const [message, setMessage] = useState("Hi!")
 
