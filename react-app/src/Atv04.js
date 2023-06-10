@@ -12,11 +12,13 @@ import CounterList from "./Components/CounterList";
 import List3 from "./Components/List3";
 import List4 from "./Components/List4";
 import BucketList from "./Components/BucketList";
+import { Link } from "react-router-dom";
 
 export default function Atv04(){
     return (
         <>
           <h2> Atividade 04</h2>
+          <Link className="voltar" to="/"> Voltar</Link>
           <Toolbar />
           <Gallerys />
           <Counter />
