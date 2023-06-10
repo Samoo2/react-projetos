@@ -5,6 +5,9 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 code {
@@ -12,22 +15,7 @@ code {
     monospace;
 }
 
-#centralizar {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+a {
+  text-decoration: none;
 }
-
-#centralizar {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-
-.componente {
-  display: block;
-  margin: 10px 0;
-}
-
 
