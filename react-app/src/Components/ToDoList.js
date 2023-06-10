@@ -5,6 +5,7 @@ export default function TodoList() {
             <img 
                 src="https://i.redd.it/b70z43hp29y51.jpg"
                 alt="Hedy Lamarr"
+                height={400}
                 class="photo"
                 />
             <ul>
