@@ -3,7 +3,7 @@ export default function TodoList() {
         <>
             <h3> Hedy Lamarr´s Todos</h3>
             <img 
-                src="https://i.imgur.com/yX0vdSs.jpg"
+                src="https://i.redd.it/b70z43hp29y51.jpg"
                 alt="Hedy Lamarr"
                 class="photo"
                 />
