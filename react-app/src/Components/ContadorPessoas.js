@@ -1,53 +1,40 @@
 import React, { useState } from "react";
 
-function ContadorHomens(props) {
+function ContadorPessoas() {
   const [totalHomens, setTotalHomens] = useState(0);
-
-  const handleTotalHomens = (value) => {
-    setTotalHomens(totalHomens + value);
-    props.onTotalPessoasChange(value);
-  };
-
-  return (
-    <div>
-      <h4>Homens</h4>
-      <span>{totalHomens}</span>
-      <button onClick={() => handleTotalHomens(1)}>+</button>
-      <button onClick={() => handleTotalHomens(-1)}>-</button>
-    </div>
-  );
-}
-
-function ContadorMulheres(props) {
   const [totalMulheres, setTotalMulheres] = useState(0);
 
+  const handleTotalHomens = (value) => {
+    const newTotal = totalHomens + value;
+    if (newTotal >= 0) {
+      setTotalHomens(newTotal);
+    }
+  };
+
   const handleTotalMulheres = (value) => {
-    setTotalMulheres(totalMulheres + value);
-    props.onTotalPessoasChange(value);
+    const newTotal = totalMulheres + value;
+    if (newTotal >= 0) {
+      setTotalMulheres(newTotal);
+    }
   };
 
   return (
     <div>
-      <h4>Mulheres</h4>
-      <span>{totalMulheres}</span>
-      <button onClick={() => handleTotalMulheres(1)}>+</button>
-      <button onClick={() => handleTotalMulheres(-1)}>-</button>
-    </div>
-  );
-}
-
-function ContadorPessoas() {
-  const [totalPessoas, setTotalPessoas] = useState(0);
-
-  const handleTotalPessoas = (value) => {
-    setTotalPessoas(totalPessoas + value);
-  };
-
-  return (
-    <div>
-      <h4>Total de pessoas: {totalPessoas}</h4>
-      <ContadorHomens onTotalPessoasChange={handleTotalPessoas} />
-      <ContadorMulheres onTotalPessoasChange={handleTotalPessoas} />
+      <h4>Total de pessoas: {totalHomens + totalMulheres}</h4>
+      <div style={{ display: "flex" }}>
+        <div style={{ marginRight: "20px" }}>
+          <img src="https://img.icons8.com/?size=512&id=21441&format=png" alt="Homens" height={200} />
+          <h4>Homens: {totalHomens}</h4>
+          <button onClick={() => handleTotalHomens(1)}>+</button>
+          <button onClick={() => handleTotalHomens(-1)}>-</button>
+        </div>
+        <div>
+          <img src="https://img.icons8.com/?size=512&id=gaDLspgb71QY&format=png" alt="Mulheres" height={200} />
+          <h4>Mulheres: {totalMulheres}</h4>
+          <button onClick={() => handleTotalMulheres(1)}>+</button>
+          <button onClick={() => handleTotalMulheres(-1)}>-</button>
+        </div>
+      </div>
     </div>
   );
 }
