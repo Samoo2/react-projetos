@@ -1,6 +1,6 @@
 /* CSS para a página Home */
   body { 
-  background-color: #a9a9a9;
+  background-color: ;#36393e
 }
   
   .container {
@@ -29,7 +29,7 @@
     display: block;
     padding: 10px;
     border-radius: 5px;
-    background-color: #00a8e8;
+    background-color: #7289da;
     color: #ffffff;
     text-decoration: none;
     transition: background-color 0.3s ease;
